@@ -5,3 +5,6 @@ config/.env
 *.bin
 *.gz
 
+
+# ignore logs
+logs/

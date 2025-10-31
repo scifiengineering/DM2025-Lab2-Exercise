@@ -1,0 +1,11 @@
+# ignore model binaries and archives
+*.bin
+*.bin.gz
+*.zip
+*.tar.gz
+*.tar
+*.gz
+
+# but keep the .gitignore file and the instructions
+!.gitignore
+!data_instructions.txt
