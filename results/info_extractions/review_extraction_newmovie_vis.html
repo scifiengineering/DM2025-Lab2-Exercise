@@ -1,0 +1,251 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">audience_impact</span> <span class="lx-label" style="background-color:#C8E6C9;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+&#x27;Wall-E,&#x27; Speaking Volumes with Stillness and Stars 
+
+Evolutionary thinking: Wall-E may have started out as a glorified trash compactor, but 
+he&#x27;s learned how to look to the sky. Pixar Wall-E • Director: Andrew Stanton • Genre: Sci-
+Fi • Running Time: 97 minutes Rated G: <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">Big-hearted and full of wonder, but too smart to 
+be saccharine.</span> “<span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">The first hour of Wall-E is a crazily inventive, <span class="lx-highlight" data-idx="2" style="background-color:#D2E3FC;">deliriously engaging</span> and 
+almost wordless silent comedy of the sort that Charlie Chaplin and Buster Keaton used 
+to make</span>.” All Things Considered, June 27, 2008 · The camera descends, at the start of 
+Wall-E, from outer space to a landscape that looks eerily familiar — and sort of not. The 
+sun filters down through a brownish haze. What seem at first like skyscrapers turn out to 
+be neatly stacked mountains of trash. Stillness is everywhere, broken only by the 
+unlikely sound of a song from Hello, Dolly! — and a solitary figure zipping around a junk-
+strewn cityscape. Apparently, humans never changed course on pollution and 
+consumerism, and sometime in the 22nd century they were forced to leave a planet 
+they had turned into a giant garbage dump. But they left without turning off a robot 
+they&#x27;d left behind. He&#x27;s basically a trash compactor on treads — a Waste Allocation 
+Load-Lifter: Earth Class, or WALL-E — who has, over the course of 700 years, developed 
+a personality. He tries to puzzle out what mankind&#x27;s detritus was for (a Rubik&#x27;s cube, a 
+spork, a fire extinguisher), and he saves a few items — an alarmingly fresh 700-year-old 
+Twinkie, say, for his pet cockroach. But most of the trash he compacts and stacks, in a 
+routine that is interrupted only when he falls head-over-treads for a sleek robot from the 
+stars: EVE (for Extra-terrestrial Vegetation Evaluator), whom he watches from afar so he 
+won&#x27;t be incinerated. Eve has an itchy trigger-finger, it turns out. The first hour of Wall-E 
+is <span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">a crazily inventive, deliriously engaging and almost wordless silent comedy</span> of the sort 
+that Charlie Chaplin and Buster Keaton used to make. <span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">Things turn more conventional</span> in 
+the last half hour, when pudgy, machine-dependent humans make an appearance, but 
+<span class="lx-highlight" data-idx="5" style="background-color:#D2E3FC;">the glow of that first part will carry you through</span>. That and <span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">the majesty of the filmmaking</span>: 
+<span class="lx-highlight" data-idx="7" style="background-color:#C8E6C9;">Wall-E&#x27;s world, in all its epic decay, looks real</span>. <span class="lx-highlight" data-idx="8" style="background-color:#D2E3FC;">You can almost taste the dust</span>. And <span class="lx-highlight" data-idx="9" style="background-color:#C8E6C9;">it&#x27;s 
+emotionally real too</span> — enough so that <span class="lx-highlight" data-idx="10" style="background-color:#C8E6C9;">a cautionary tale about the environment, and 
+about big corporations that don&#x27;t take care of it, and about getting so caught up in our 
+gadgetry that we forget to look at the stars all take a back seat to romance</span>. So do some 
+specifically cinematic subtexts. <span class="lx-highlight" data-idx="11" style="background-color:#C8E6C9;">Director Andrew Stanton and his animators have 
+slipped in nods not just to Hello, Dolly!, but to Star Wars and Blade Runner, An 
+Inconvenient Truth and the comedies of Chaplin and Jacques Tati</span>. More than just a nod 
+to Chaplin, actually: <span class="lx-highlight" data-idx="12" style="background-color:#C8E6C9;">Wall-E, with his workaholic scruffiness and his yearning for 
+someone to hold hands with, might as well be Chaplin&#x27;s Little Tramp</span>. <span class="lx-highlight" data-idx="13" style="background-color:#C8E6C9;">There&#x27;s actually a 
+nice parallel between this largely silent film and Chaplin&#x27;s first sound film, Modern 
+Times</span>. In that one, <span class="lx-highlight" data-idx="14" style="background-color:#C8E6C9;">the silent clown used the soundtrack mostly for music and effects, 
+not for speech, just as Pixar does here</span>. <span class="lx-highlight" data-idx="15" style="background-color:#C8E6C9;">Chaplin only let you hear a human voice a 
+couple of times, and only on some sort of mechanical contraption — say a closedcircuit</span>
+&quot;&quot;&quot;
+
+**Page 2**
+&quot;&quot;&quot;
+TV screen — to emphasize its artificiality. It was his way of saying to the sound world, 
+&quot;OK, everybody&#x27;s doing this talking thing now, but <span class="lx-highlight" data-idx="16" style="background-color:#C8E6C9;">look how much more expressive our 
+silent world is</span>.&quot; For the first time in a Pixar movie, Wall-E&#x27;s filmmakers give a nod to the 
+world of actual actors and cameras — and <span class="lx-highlight" data-idx="17" style="background-color:#C8E6C9;">make them artificial in the same way</span>: by only 
+letting you see them on video screens, where <span class="lx-highlight" data-idx="18" style="background-color:#C8E6C9;">they look flat and washed-out compared 
+to the digital world around them</span>. But there&#x27;s one difference. Chaplin knew he had lost 
+the battle: <span class="lx-highlight" data-idx="19" style="background-color:#C8E6C9;">Silence was finished; sound had won</span>. In today&#x27;s Hollywood, <span class="lx-highlight" data-idx="20" style="background-color:#C8E6C9;">digital is what&#x27;s 
+taking over</span> — in special effects, in green-screen work, in animation. And Pixar&#x27;s 
+animators, bless them, are at the forefront, insisting that <span class="lx-highlight" data-idx="21" style="background-color:#C8E6C9;">imagery created on computers 
+doesn&#x27;t have to be soulless</span>. <span class="lx-highlight" data-idx="22" style="background-color:#C8E6C9;">WallE&#x27;s images are filled with emotion</span>, just as silent film&#x27;s 
+images were — <span class="lx-highlight" data-idx="23" style="background-color:#C8E6C9;">even though its characters look like they&#x27;re made of metal and plastic, 
+and can&#x27;t say a word</span>. <span class="lx-highlight" data-idx="24" style="background-color:#C8E6C9;">Wall-E is being sold as a futuristic fantasy</span>, of course. But I have to 
+say <span class="lx-highlight" data-idx="25" style="background-color:#C8E6C9;">I&#x27;m just as gratified by their look back 70 years to silent movies as I am by their look 
+forward 700 years to a silent planet</span>.
+&quot;&quot;&quot;
+
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="25" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/26</span> |
+          Pos <span id="posInfo">[288-352]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "Big-hearted and full of wonder, but too smart to be saccharine.", "color": "#C8E6C9", "startPos": 288, "endPos": 352, "beforeText": "ash compactor, but \nhe&#x27;s learned how to look to the sky. Pixar Wall-E \u2022 Director: Andrew Stanton \u2022 Genre: Sci-\nFi \u2022 Running Time: 97 minutes Rated G: ", "extractionText": "Big-hearted and full of wonder, but too smart to \nbe saccharine.", "afterText": " \u201cThe first hour of Wall-E is a crazily inventive, deliriously engaging and \nalmost wordless silent comedy of the sort that Charlie Chaplin and Buster", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Wall-E</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Big-hearted and full of wonder, but too smart to be saccharine</span>}</div>"}, {"index": 1, "class": "opinion_statement", "text": "The first hour of Wall-E is a crazily inventive, deliriously engaging and almost wordless silent comedy of the sort that Charlie Chaplin and Buster Keaton used to make.", "color": "#C8E6C9", "startPos": 354, "endPos": 523, "beforeText": "l-E \u2022 Director: Andrew Stanton \u2022 Genre: Sci-\nFi \u2022 Running Time: 97 minutes Rated G: Big-hearted and full of wonder, but too smart to \nbe saccharine. \u201c", "extractionText": "The first hour of Wall-E is a crazily inventive, deliriously engaging and \nalmost wordless silent comedy of the sort that Charlie Chaplin and Buster Keaton used \nto make", "afterText": ".\u201d All Things Considered, June 27, 2008 \u00b7 The camera descends, at the start of \nWall-E, from outer space to a landscape that looks eerily familiar \u2014 a", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The first hour of Wall-E</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">crazily inventive, deliriously engaging and almost wordless silent comedy</span>}</div>"}, {"index": 2, "class": "audience_impact", "text": "deliriously engaging", "color": "#D2E3FC", "startPos": 403, "endPos": 423, "beforeText": " Running Time: 97 minutes Rated G: Big-hearted and full of wonder, but too smart to \nbe saccharine. \u201cThe first hour of Wall-E is a crazily inventive, ", "extractionText": "deliriously engaging", "afterText": " and \nalmost wordless silent comedy of the sort that Charlie Chaplin and Buster Keaton used \nto make.\u201d All Things Considered, June 27, 2008 \u00b7 The came", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">engaged</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">The first hour of Wall-E</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the audience</span>}</div>"}, {"index": 3, "class": "opinion_statement", "text": "a crazily inventive, deliriously engaging and almost wordless silent comedy", "color": "#C8E6C9", "startPos": 1925, "endPos": 2000, "beforeText": "tation Evaluator), whom he watches from afar so he \nwon&#x27;t be incinerated. Eve has an itchy trigger-finger, it turns out. The first hour of Wall-E \nis ", "extractionText": "a crazily inventive, deliriously engaging and almost wordless silent comedy", "afterText": " of the sort \nthat Charlie Chaplin and Buster Keaton used to make. Things turn more conventional in \nthe last half hour, when pudgy, machine-dependent", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The first hour of Wall-E</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">crazily inventive, deliriously engaging</span>}</div>"}, {"index": 4, "class": "opinion_statement", "text": "Things turn more conventional", "color": "#C8E6C9", "startPos": 2067, "endPos": 2096, "beforeText": "l-E \nis a crazily inventive, deliriously engaging and almost wordless silent comedy of the sort \nthat Charlie Chaplin and Buster Keaton used to make. ", "extractionText": "Things turn more conventional", "afterText": " in \nthe last half hour, when pudgy, machine-dependent humans make an appearance, but \nthe glow of that first part will carry you through. That and th", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The last half hour</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">more conventional</span>}</div>"}, {"index": 5, "class": "audience_impact", "text": "the glow of that first part will carry you through", "color": "#D2E3FC", "startPos": 2183, "endPos": 2233, "beforeText": "n and Buster Keaton used to make. Things turn more conventional in \nthe last half hour, when pudgy, machine-dependent humans make an appearance, but \n", "extractionText": "the glow of that first part will carry you through", "afterText": ". That and the majesty of the filmmaking: \nWall-E&#x27;s world, in all its epic decay, looks real. You can almost taste the dust. And it&#x27;s \nemotionally rea", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">satisfied, content</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">The first hour of Wall-E</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the audience</span>}</div>"}, {"index": 6, "class": "opinion_statement", "text": "the majesty of the filmmaking", "color": "#C8E6C9", "startPos": 2244, "endPos": 2273, "beforeText": "al in \nthe last half hour, when pudgy, machine-dependent humans make an appearance, but \nthe glow of that first part will carry you through. That and ", "extractionText": "the majesty of the filmmaking", "afterText": ": \nWall-E&#x27;s world, in all its epic decay, looks real. You can almost taste the dust. And it&#x27;s \nemotionally real too \u2014 enough so that a cautionary tale", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The filmmaking</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">majesty</span>}</div>"}, {"index": 7, "class": "opinion_statement", "text": "Wall-E's world, in all its epic decay, looks real", "color": "#C8E6C9", "startPos": 2276, "endPos": 2325, "beforeText": "pudgy, machine-dependent humans make an appearance, but \nthe glow of that first part will carry you through. That and the majesty of the filmmaking: \n", "extractionText": "Wall-E&#x27;s world, in all its epic decay, looks real", "afterText": ". You can almost taste the dust. And it&#x27;s \nemotionally real too \u2014 enough so that a cautionary tale about the environment, and \nabout big corporations ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Wall-E&#x27;s world</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">looks real</span>}</div>"}, {"index": 8, "class": "audience_impact", "text": "You can almost taste the dust", "color": "#D2E3FC", "startPos": 2327, "endPos": 2356, "beforeText": " but \nthe glow of that first part will carry you through. That and the majesty of the filmmaking: \nWall-E&#x27;s world, in all its epic decay, looks real. ", "extractionText": "You can almost taste the dust", "afterText": ". And it&#x27;s \nemotionally real too \u2014 enough so that a cautionary tale about the environment, and \nabout big corporations that don&#x27;t take care of it, and", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">immersed</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">The visual realism of Wall-E&#x27;s world</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the audience</span>}</div>"}, {"index": 9, "class": "opinion_statement", "text": "it's emotionally real too", "color": "#C8E6C9", "startPos": 2362, "endPos": 2388, "beforeText": "ill carry you through. That and the majesty of the filmmaking: \nWall-E&#x27;s world, in all its epic decay, looks real. You can almost taste the dust. And ", "extractionText": "it&#x27;s \nemotionally real too", "afterText": " \u2014 enough so that a cautionary tale about the environment, and \nabout big corporations that don&#x27;t take care of it, and about getting so caught up in o", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Wall-E&#x27;s world</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">emotionally real</span>}</div>"}, {"index": 10, "class": "opinion_statement", "text": "a cautionary tale about the environment, and about big corporations that don't take care of it, and about getting so caught up in our gadgetry that we forget to look at the stars all take a back seat to romance", "color": "#C8E6C9", "startPos": 2406, "endPos": 2618, "beforeText": "of the filmmaking: \nWall-E&#x27;s world, in all its epic decay, looks real. You can almost taste the dust. And it&#x27;s \nemotionally real too \u2014 enough so that ", "extractionText": "a cautionary tale about the environment, and \nabout big corporations that don&#x27;t take care of it, and about getting so caught up in our \ngadgetry that we forget to look at the stars all take a back seat to romance", "afterText": ". So do some \nspecifically cinematic subtexts. Director Andrew Stanton and his animators have \nslipped in nods not just to Hello, Dolly!, but to Star ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The cautionary tale elements</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">take a back seat to romance</span>}</div>"}, {"index": 11, "class": "opinion_statement", "text": "Director Andrew Stanton and his animators have slipped in nods not just to Hello, Dolly!, but to Star Wars and Blade Runner, An Inconvenient Truth and the comedies of Chaplin and Jacques Tati", "color": "#C8E6C9", "startPos": 2665, "endPos": 2858, "beforeText": "tting so caught up in our \ngadgetry that we forget to look at the stars all take a back seat to romance. So do some \nspecifically cinematic subtexts. ", "extractionText": "Director Andrew Stanton and his animators have \nslipped in nods not just to Hello, Dolly!, but to Star Wars and Blade Runner, An \nInconvenient Truth and the comedies of Chaplin and Jacques Tati", "afterText": ". More than just a nod \nto Chaplin, actually: Wall-E, with his workaholic scruffiness and his yearning for \nsomeone to hold hands with, might as well ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Director Andrew Stanton and his animators</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">slipped in nods</span>}</div>"}, {"index": 12, "class": "opinion_statement", "text": "Wall-E, with his workaholic scruffiness and his yearning for someone to hold hands with, might as well be Chaplin's Little Tramp", "color": "#C8E6C9", "startPos": 2904, "endPos": 3033, "beforeText": ", but to Star Wars and Blade Runner, An \nInconvenient Truth and the comedies of Chaplin and Jacques Tati. More than just a nod \nto Chaplin, actually: ", "extractionText": "Wall-E, with his workaholic scruffiness and his yearning for \nsomeone to hold hands with, might as well be Chaplin&#x27;s Little Tramp", "afterText": ". There&#x27;s actually a \nnice parallel between this largely silent film and Chaplin&#x27;s first sound film, Modern \nTimes. In that one, the silent clown used", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Wall-E</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">might as well be Chaplin&#x27;s Little Tramp</span>}</div>"}, {"index": 13, "class": "opinion_statement", "text": "There's actually a nice parallel between this largely silent film and Chaplin's first sound film, Modern Times", "color": "#C8E6C9", "startPos": 3035, "endPos": 3147, "beforeText": "Chaplin, actually: Wall-E, with his workaholic scruffiness and his yearning for \nsomeone to hold hands with, might as well be Chaplin&#x27;s Little Tramp. ", "extractionText": "There&#x27;s actually a \nnice parallel between this largely silent film and Chaplin&#x27;s first sound film, Modern \nTimes", "afterText": ". In that one, the silent clown used the soundtrack mostly for music and effects, \nnot for speech, just as Pixar does here. Chaplin only let you hear ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The parallel between Wall-E and Modern Times</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">nice parallel</span>}</div>"}, {"index": 14, "class": "opinion_statement", "text": "the silent clown used the soundtrack mostly for music and effects, not for speech, just as Pixar does here", "color": "#C8E6C9", "startPos": 3162, "endPos": 3269, "beforeText": "haplin&#x27;s Little Tramp. There&#x27;s actually a \nnice parallel between this largely silent film and Chaplin&#x27;s first sound film, Modern \nTimes. In that one, ", "extractionText": "the silent clown used the soundtrack mostly for music and effects, \nnot for speech, just as Pixar does here", "afterText": ". Chaplin only let you hear a human voice a \ncouple of times, and only on some sort of mechanical contraption \u2014 say a closedcircuit\n&quot;&quot;&quot;\n\n**Page 2**\n&quot;&quot;", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Chaplin&#x27;s use of soundtrack in Modern Times and Pixar&#x27;s use in Wall-E</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">used the soundtrack mostly for music and effects, not for speech</span>}</div>"}, {"index": 15, "class": "opinion_statement", "text": "Chaplin only let you hear a human voice a couple of times, and only on some sort of mechanical contraption \u2014 say a closedcircuit TV screen \u2014 to emphasize its artificiality", "color": "#C8E6C9", "startPos": 3271, "endPos": 3400, "beforeText": " sound film, Modern \nTimes. In that one, the silent clown used the soundtrack mostly for music and effects, \nnot for speech, just as Pixar does here. ", "extractionText": "Chaplin only let you hear a human voice a \ncouple of times, and only on some sort of mechanical contraption \u2014 say a closedcircuit", "afterText": "\n&quot;&quot;&quot;\n\n**Page 2**\n&quot;&quot;&quot;\nTV screen \u2014 to emphasize its artificiality. It was his way of saying to the sound world, \n&quot;OK, everybody&#x27;s doing this talking thi", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Chaplin&#x27;s use of human voice in Modern Times</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">emphasize its artificiality</span>}</div>"}, {"index": 16, "class": "opinion_statement", "text": "look how much more expressive our silent world is", "color": "#C8E6C9", "startPos": 3562, "endPos": 3612, "beforeText": " 2**\n&quot;&quot;&quot;\nTV screen \u2014 to emphasize its artificiality. It was his way of saying to the sound world, \n&quot;OK, everybody&#x27;s doing this talking thing now, but ", "extractionText": "look how much more expressive our \nsilent world is", "afterText": ".&quot; For the first time in a Pixar movie, Wall-E&#x27;s filmmakers give a nod to the \nworld of actual actors and cameras \u2014 and make them artificial in the sa", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The silent world</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">more expressive</span>}</div>"}, {"index": 17, "class": "opinion_statement", "text": "make them artificial in the same way", "color": "#C8E6C9", "startPos": 3732, "endPos": 3768, "beforeText": "xpressive our \nsilent world is.&quot; For the first time in a Pixar movie, Wall-E&#x27;s filmmakers give a nod to the \nworld of actual actors and cameras \u2014 and ", "extractionText": "make them artificial in the same way", "afterText": ": by only \nletting you see them on video screens, where they look flat and washed-out compared \nto the digital world around them. But there&#x27;s one diff", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Actual actors and cameras</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">artificial</span>}</div>"}, {"index": 18, "class": "opinion_statement", "text": "they look flat and washed-out compared to the digital world around them", "color": "#C8E6C9", "startPos": 3824, "endPos": 3896, "beforeText": "ve a nod to the \nworld of actual actors and cameras \u2014 and make them artificial in the same way: by only \nletting you see them on video screens, where ", "extractionText": "they look flat and washed-out compared \nto the digital world around them", "afterText": ". But there&#x27;s one difference. Chaplin knew he had lost \nthe battle: Silence was finished; sound had won. In today&#x27;s Hollywood, digital is what&#x27;s \ntaki", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Actual actors and cameras seen on video screens</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">flat and washed-out</span>}</div>"}, {"index": 19, "class": "opinion_statement", "text": "Silence was finished; sound had won", "color": "#C8E6C9", "startPos": 3964, "endPos": 3999, "beforeText": "ns, where they look flat and washed-out compared \nto the digital world around them. But there&#x27;s one difference. Chaplin knew he had lost \nthe battle: ", "extractionText": "Silence was finished; sound had won", "afterText": ". In today&#x27;s Hollywood, digital is what&#x27;s \ntaking over \u2014 in special effects, in green-screen work, in animation. And Pixar&#x27;s \nanimators, bless them, a", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Silence</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">finished</span>}</div>"}, {"index": 20, "class": "opinion_statement", "text": "digital is what's taking over", "color": "#C8E6C9", "startPos": 4023, "endPos": 4053, "beforeText": "gital world around them. But there&#x27;s one difference. Chaplin knew he had lost \nthe battle: Silence was finished; sound had won. In today&#x27;s Hollywood, ", "extractionText": "digital is what&#x27;s \ntaking over", "afterText": " \u2014 in special effects, in green-screen work, in animation. And Pixar&#x27;s \nanimators, bless them, are at the forefront, insisting that imagery created on", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Digital</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">taking over</span>}</div>"}, {"index": 21, "class": "opinion_statement", "text": "imagery created on computers doesn't have to be soulless", "color": "#C8E6C9", "startPos": 4185, "endPos": 4242, "beforeText": "hat&#x27;s \ntaking over \u2014 in special effects, in green-screen work, in animation. And Pixar&#x27;s \nanimators, bless them, are at the forefront, insisting that ", "extractionText": "imagery created on computers \ndoesn&#x27;t have to be soulless", "afterText": ". WallE&#x27;s images are filled with emotion, just as silent film&#x27;s \nimages were \u2014 even though its characters look like they&#x27;re made of metal and plastic,", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Imagery created on computers</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">doesn&#x27;t have to be soulless</span>}</div>"}, {"index": 22, "class": "opinion_statement", "text": "WallE's images are filled with emotion", "color": "#C8E6C9", "startPos": 4244, "endPos": 4282, "beforeText": "rk, in animation. And Pixar&#x27;s \nanimators, bless them, are at the forefront, insisting that imagery created on computers \ndoesn&#x27;t have to be soulless. ", "extractionText": "WallE&#x27;s images are filled with emotion", "afterText": ", just as silent film&#x27;s \nimages were \u2014 even though its characters look like they&#x27;re made of metal and plastic, \nand can&#x27;t say a word. Wall-E is being ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">WallE&#x27;s images</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">filled with emotion</span>}</div>"}, {"index": 23, "class": "opinion_statement", "text": "even though its characters look like they're made of metal and plastic, and can't say a word", "color": "#C8E6C9", "startPos": 4321, "endPos": 4414, "beforeText": "nsisting that imagery created on computers \ndoesn&#x27;t have to be soulless. WallE&#x27;s images are filled with emotion, just as silent film&#x27;s \nimages were \u2014 ", "extractionText": "even though its characters look like they&#x27;re made of metal and plastic, \nand can&#x27;t say a word", "afterText": ". Wall-E is being sold as a futuristic fantasy, of course. But I have to \nsay I&#x27;m just as gratified by their look back 70 years to silent movies as I ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Wall-E&#x27;s characters</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">made of metal and plastic, and can&#x27;t say a word</span>}</div>"}, {"index": 24, "class": "opinion_statement", "text": "Wall-E is being sold as a futuristic fantasy", "color": "#C8E6C9", "startPos": 4416, "endPos": 4460, "beforeText": "led with emotion, just as silent film&#x27;s \nimages were \u2014 even though its characters look like they&#x27;re made of metal and plastic, \nand can&#x27;t say a word. ", "extractionText": "Wall-E is being sold as a futuristic fantasy", "afterText": ", of course. But I have to \nsay I&#x27;m just as gratified by their look back 70 years to silent movies as I am by their look \nforward 700 years to a silen", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Wall-E</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">futuristic fantasy</span>}</div>"}, {"index": 25, "class": "opinion_statement", "text": "I'm just as gratified by their look back 70 years to silent movies as I am by their look forward 700 years to a silent planet", "color": "#C8E6C9", "startPos": 4492, "endPos": 4618, "beforeText": "cters look like they&#x27;re made of metal and plastic, \nand can&#x27;t say a word. Wall-E is being sold as a futuristic fantasy, of course. But I have to \nsay ", "extractionText": "I&#x27;m just as gratified by their look back 70 years to silent movies as I am by their look \nforward 700 years to a silent planet", "afterText": ".\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The look back to silent movies and the look forward to a silent planet</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">gratified</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
