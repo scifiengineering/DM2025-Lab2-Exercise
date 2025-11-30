@@ -1,0 +1,4 @@
+Image: /Users/scifithedev/Documents/Taiwan Masters/NTHU/2025 Fall/Data Mining - Concepts,Techniques, andApplications/Lab-2/DM2025-Lab2-Exercise/pics/example3.jpg
+Element: person
+Baseline model: gemini-2.5-flash-lite -> saved in segmentation_outputs/other_flash_lite
+Stronger model: gemini-2.0-flash -> saved in segmentation_outputs/other_stronger

@@ -8,3 +8,4 @@ config/.env
 
 # ignore logs
 logs/
+segmentation_outputs/backup_*
