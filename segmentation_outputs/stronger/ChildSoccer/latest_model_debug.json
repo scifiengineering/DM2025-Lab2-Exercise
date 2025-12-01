@@ -1,0 +1,46 @@
+{
+  "time": "2025-11-30T04:18:42.099577Z",
+  "attempts": [
+    {
+      "pattern": "positional_prompt_modelname",
+      "time": 1764476322.102438,
+      "type": "NoneType",
+      "text_preview": null
+    },
+    {
+      "pattern": "positional_prompt_only",
+      "time": 1764476322.1083388,
+      "type": "str",
+      "text_preview": "I'm sorry, but I cannot fulfill that request. I am unable to process images."
+    },
+    {
+      "pattern": "single_dict_arg",
+      "time": 1764476322.752971,
+      "type": "NoneType",
+      "text_preview": null
+    },
+    {
+      "pattern": "single_dict_input",
+      "time": 1764476322.755318,
+      "type": "NoneType",
+      "text_preview": null
+    },
+    {
+      "pattern": "kw_model_name",
+      "time": 1764476322.755614,
+      "type": "str",
+      "text_preview": "Okay, I understand. I will await the image and then return a JSON array of detections for the \"child\" objects found in the image, including their bounding boxes and optionally their masks.\n"
+    },
+    {
+      "pattern": "kw_model",
+      "time": 1764476323.547968,
+      "exception": "TypeError(\"prompt_gemini() got an unexpected keyword argument 'model'\")"
+    },
+    {
+      "pattern": "positional_prompt_model_tokens",
+      "time": 1764476323.5479848,
+      "type": "NoneType",
+      "text_preview": null
+    }
+  ]
+}
